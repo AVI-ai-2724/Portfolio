@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Singh | Space Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+    <div class="nebula-layer nebula1"></div>
+    <div class="nebula-layer nebula2"></div>
+    <header>
+        <div class="container nav-container">
+            <div class="logo"><i class="fas fa-rocket"></i> AS</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section id="home" class="hero space-hero">
+            <div class="hero-content">
+                <div class="hero-photo floating-astronaut" id="astronaut">
+                    <img src="Pro.jpg" alt="Abhinav Singh Profile Photo" />
+                </div>
+                <div class="hero-text">
+                    <h1><span class="space-glow">ABHINAV SINGH</span></h1>
+                    <h2>B.Tech CSE (AI/ML) Student</h2>
+                    <p>Passionate about AI, Machine Learning, Software Development, and exploring the universe of technology.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn space-btn">View Projects <i class="fas fa-meteor"></i></a>
+                        <a href="#contact" class="btn btn-outline space-btn">Contact Me <i class="fas fa-satellite"></i></a>
+                        <button id="music-toggle" class="btn space-btn" type="button"><i class="fas fa-music"></i> Space Music</button>
+                        <button id="constellation-toggle" class="btn space-btn" type="button"><i class="fas fa-star"></i> Constellation Mode</button>
+                    </div>
+                </div>
+            </div>
+            <div class="space-svg planet1"></div>
+            <div class="space-svg planet2"></div>
+            <div class="space-svg rocket"></div>
+        </section>
+        <hr class="divider" />
+        <section id="about" class="space-section">
+            <h2><i class="fas fa-user-astronaut"></i> About</h2>
+            <p>Hello, I'm Abhinav Singh, a dedicated B.Tech student specializing in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning. I am passionate about leveraging technology to solve real-world problems and continuously expanding my skill set in software development and AI.</p>
+        </section>
+        <hr class="divider" />
+        <section id="education" class="space-section">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul class="card-list">
+                <li class="card">
+                    <i class="fas fa-graduation-cap card-icon"></i>
+                    <div>
+                        <strong>B.Tech in Computer Science & Engineering (AI/ML)</strong><br />
+                        [Your University], [Year]
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-school card-icon"></i>
+                    <div>
+                        <strong>Higher Secondary</strong><br />
+                        [Your School], [Year]
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <hr class="divider" />
+        <section id="skills" class="space-section">
+            <h2><i class="fas fa-satellite-dish"></i> Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fas fa-code"></i> C++</li>
+                <li><i class="fas fa-robot"></i> Machine Learning, Deep Learning</li>
+                <li><i class="fas fa-chart-bar"></i> Data Analysis, Visualization</li>
+                <li><i class="fas fa-globe"></i> Web Development (HTML, CSS, JS)</li>
+                <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+            </ul>
+        </section>
+        <hr class="divider" />
+        <section id="projects" class="space-section">
+            <h2><i class="fas fa-rocket"></i> Projects</h2>
+            <ul class="card-list">
+                <li class="card">
+                    <i class="fas fa-smile card-icon"></i>
+                    <div>
+                        <strong>Sentimental Analyses by Face Recognition</strong><br />
+                        Analyzes user sentiment in real-time using facial recognition and AI.
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-music card-icon"></i>
+                    <div>
+                        <strong>Music Recommending System by Face Recognition</strong><br />
+                        Recommends music based on detected facial emotions using AI.
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-heartbeat card-icon"></i>
+                    <div>
+                        <strong>Health Analyzer using AI</strong><br />
+                        AI-powered platform for analyzing and monitoring health metrics.
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-graduation-cap card-icon"></i>
+                    <div>
+                        <strong>IRA - Education Platform</strong><br />
+                        An innovative online education platform for interactive learning.
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-search-dollar card-icon"></i>
+                    <div>
+                        <strong>Fake Product Review Detection by ML</strong><br />
+                        Detects and filters fake product reviews using machine learning.
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-comments card-icon"></i>
+                    <div>
+                        <strong>AI Chatbot</strong><br />
+                        Developed a conversational AI chatbot using Python and NLP techniques.
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-chart-line card-icon"></i>
+                    <div>
+                        <strong>ML Stock Predictor</strong><br />
+                        Built a machine learning model to predict stock prices using historical data.
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-laptop-code card-icon"></i>
+                    <div>
+                        <strong>Portfolio Website</strong><br />
+                        Designed and deployed a personal portfolio website to showcase my work.
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <hr class="divider" />
+        <section id="certificates" class="space-section">
+            <h2><i class="fas fa-certificate"></i> Certificates</h2>
+            <ul class="card-list">
+                <li class="card">
+                    <i class="fas fa-certificate card-icon"></i>
+                    <div>
+                        Machine Learning by Stanford University (Coursera)
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-certificate card-icon"></i>
+                    <div>
+                        Deep Learning Specialization (Coursera)
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-certificate card-icon"></i>
+                    <div>
+                        Web Development Bootcamp (Udemy)
+                    </div>
+                </li>
+                <li class="card">
+                    <i class="fas fa-certificate card-icon"></i>
+                    <div>
+                        Introduction to Machine Learning (Free ML Certification Course)
+                        <br />
+                        <a href="Introduction-to-Machine-Learning_Free-Machine-Learning-Certification-Course-in-Hindi-130-Projects-Included_Saransh-Saini (1) (1).pdf" target="_blank" class="btn space-btn" style="margin-top:0.7em;display:inline-block;">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <hr class="divider" />
+        <section id="contact" class="space-section">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <form id="contact-form">
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="space-btn">Send <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="contact-social">
+                <a href="https://www.linkedin.com/in/abhinav-singh-a955972b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:avi27451215@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/abhinav-singh-a955972b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:avi27451215@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2023 Abhinav Singh. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <audio id="space-audio" loop preload="auto" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b5b6b1b2.mp3"></audio>
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html> 
